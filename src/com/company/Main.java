@@ -43,5 +43,21 @@ public class Main {
             lastIndex=lastIndex - 1;
         }
         System.out.println(reverseFullName);
+
+        int [][] arrOne = new int [3][3];
+        int a = arrOne.length - 1;
+        int b = 0;
+        for (int i = 0; i < arrOne.length; i++) {
+            arrOne [i][i]= 1;
+            b = Math.abs(i - a);
+                    arrOne[i][b] = 1;
+                    arrOne[b][i] = 1;
+            }
+        for (int i = 0; i < arrOne.length; i++) {
+            for (int j = 0; j < arrOne.length; j++) {
+                System.out.print(arrOne[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
