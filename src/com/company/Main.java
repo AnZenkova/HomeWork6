@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -59,5 +60,14 @@ public class Main {
             }
             System.out.println();
         }
+        int [] arrTwo = {5,4,3,2,1};
+        System.out.println(Arrays.toString(arrTwo));
+        int c = arrTwo.length;
+        int [] arrTwoNew = new int[arrTwo.length];
+        for (int i = 0; i < arrTwo.length; i++) {
+            c = c - 1;
+            arrTwoNew [i] = arrTwo[c];
+        }
+        System.out.println(Arrays.toString(arrTwoNew));
     }
 }
