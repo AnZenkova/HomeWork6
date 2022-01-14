@@ -33,6 +33,16 @@ public class Main {
         int maxIndexLength = dailyExpenses.length;
         double averageExpenses = sumExpenses / maxIndexLength;
         System.out.println("Средняя сумма трат за месяц составила " + averageExpenses + " рублей");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int lastIndex = reverseFullName.length -1;
+        int numberCycles = reverseFullName.length/2;
+        for (int i = 0; i < numberCycles; i++) {
+            char memory = reverseFullName[i];
+            reverseFullName[i]=reverseFullName[lastIndex];
+            reverseFullName[lastIndex] = memory;
+            lastIndex=lastIndex - 1;
+        }
+        System.out.println(reverseFullName);
 
     }
 }
