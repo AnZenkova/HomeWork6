@@ -69,5 +69,14 @@ public class Main {
             arrTwoNew [i] = arrTwo[c];
         }
         System.out.println(Arrays.toString(arrTwoNew));
+        int d = arrTwo.length -1;
+        int numberCyclesTwo = arrTwo.length/2;
+        for (int i = 0; i < numberCyclesTwo; i++) {
+            int memory = arrTwo[i];
+            arrTwo[i] = arrTwo[d];
+            arrTwo[d] = memory;
+            d = d - 1;
+        }
+        System.out.println(Arrays.toString(arrTwoNew));
     }
 }
