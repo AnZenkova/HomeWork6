@@ -43,6 +43,5 @@ public class Main {
             lastIndex=lastIndex - 1;
         }
         System.out.println(reverseFullName);
-
     }
 }
