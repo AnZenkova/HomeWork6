@@ -78,5 +78,16 @@ public class Main {
             d = d - 1;
         }
         System.out.println(Arrays.toString(arrTwoNew));
+        int [] arrThree = {-6,2,5,-8,8,10,4,-7,12,1};
+        for (int i = 0; i < arrThree.length; i++) {
+            for (int j = 0; j < arrThree.length; j++) {
+                int z = arrThree [i] + arrThree [j];
+                if (z == -2 && arrThree [i] != arrThree [j]) {
+                    System.out.println(arrThree [i] + " " + arrThree [j]);
+                    break;
+                }
+            }
+            break;
+        }
     }
 }
