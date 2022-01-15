@@ -82,12 +82,12 @@ public class Main {
         for (int i = 0; i < arrThree.length; i++) {
             for (int j = 0; j < arrThree.length; j++) {
                 int z = arrThree [i] + arrThree [j];
-                if (z == -2 && arrThree [i] != arrThree [j]) {
+                if (z == -2 && arrThree [i] != arrThree [j] && i < j) {
                     System.out.println(arrThree [i] + " " + arrThree [j]);
                     break;
                 }
             }
-            break;
         }
+
     }
 }
